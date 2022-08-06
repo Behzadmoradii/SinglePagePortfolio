@@ -1,0 +1,732 @@
+/*  Rest Css Default */
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: TitilliumWeb, Tahoma, Verdana, sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+/* ------------------------ Set Font  */
+
+@font-face {
+  font-family: TitilliumWeb;
+  src: url(font/Titillium_Web/TitilliumWeb-Light.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: TitilliumWeb;
+  src: url(font/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+  font-family: TitilliumWeb;
+  src: url(font/Titillium_Web/TitilliumWeb-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: TitilliumWeb;
+  src: url(font/Titillium_Web/TitilliumWeb-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: TitilliumWeb;
+  src: url(font/Titillium_Web/TitilliumWeb-Italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: MyriadPro;
+  src: url(./font/MYRIADPRO-REGULAR.woff);
+}
+
+/*  Container  */
+.container {
+  max-width: 68.75rem;
+  margin: 0 auto;
+}
+
+/* ------------------------ Section Header  */
+
+#header {
+  background-color: #87509c;
+  padding: 1.875rem 2.125rem 6.25rem;
+}
+
+#icon {
+  display: none;
+}
+
+.responseNav {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 10px;
+  z-index: 100;
+}
+
+#header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#navList {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list-item {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f7f3ea;
+  padding: 0.438rem 1rem;
+  margin: 0 0.313rem;
+  border-radius: 0.25rem;
+  /* -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out; */
+}
+
+.list-item:hover,
+.navItemActive {
+  background-color: #643a79;
+}
+
+#header article {
+  text-align: center;
+}
+
+#header h1 {
+  white-space: pre-line;
+  color: #f7f3ea;
+  font-size: 2.625rem;
+  margin: 3.125rem 0 2.5rem;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-family: TitilliumWeb;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #f7f3ea;
+  padding: 1.625rem 5rem;
+  border: none;
+  border-radius: 0.313rem;
+  border-bottom: 0.25rem solid #c86a40;
+  background-color: #eb7d4b;
+  cursor: pointer;
+}
+
+.btn:active {
+  -webkit-transform: translate(0, 0.063rem);
+  -ms-transform: translate(0, 0.063rem);
+  transform: translate(0, 0.063rem);
+}
+
+/*   ----------------------------Section Service   */
+
+#service {
+  background-color: #17c2a4;
+  color: #f7f3ea;
+  padding: 3.438rem 0;
+  text-align: center;
+}
+
+.titleHead {
+  font-size: 2.5rem;
+}
+
+.titleHead::after {
+  content: "";
+  display: block;
+  width: 5.625rem;
+  height: 0.313rem;
+  margin: 0.625rem auto;
+  background-color: #14a58c;
+}
+
+.titleText {
+  font-size: 1.125rem;
+  width: 53%;
+  margin: 0 auto 4.5rem;
+}
+
+.boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.box-item {
+  text-align: center;
+  width: 12.188rem;
+}
+
+.box-item h3 {
+  font-size: 1.5rem;
+}
+
+/*  -----------------------Section Team  */
+
+#team {
+  text-align: center;
+  color: #3c4761;
+  background-color: #e7f1f8;
+  padding: 3.125rem 0;
+}
+
+#team .titleHead::after {
+  background-color: #c8d9e5;
+}
+
+#team .titleText {
+  width: 100%;
+}
+
+#team h3 {
+  text-transform: uppercase;
+}
+
+#team img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#team span {
+  color: #3cbee8;
+}
+
+.team-box-item {
+  width: 12.688rem;
+  font-weight: 200;
+}
+
+.iconBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.iconBox i {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 1.9;
+  margin: 0 0.25rem;
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  -o-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  background-color: #bdd1df;
+}
+
+.iconBox i:hover {
+  color: #bdd1df;
+  background-color: #fff;
+}
+
+/*  -------------------------Section Skills */
+
+#skill {
+  text-align: center;
+  color: #3c4761;
+  padding: 3.125rem 0;
+  overflow: hidden;
+  font-family: MyriadPro, sans-serif;
+}
+
+#skill .titleHead::after {
+  background-color: #dfe8ed;
+}
+
+#skill h2 {
+  font-weight: 300;
+  letter-spacing: 0.625rem;
+}
+
+.skill-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.c100 {
+  margin: 0.625rem 0.625rem 1rem;
+  background-color: #dfe8ed;
+}
+
+.c100.big {
+  font-size: 11.25rem;
+}
+
+#skill h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.c100 span,
+.c100 span:hover {
+  color: #3c4761;
+  font-family: TitilliumWeb, Tahoma, Verdana, sans-serif;
+}
+
+.blue {
+  border-color: #30bae7 !important;
+}
+.red {
+  border-color: #d74680 !important;
+}
+.green {
+  border-color: #15c7a8 !important;
+}
+.orange {
+  border-color: #eb7d4b !important;
+}
+
+/* --------------------------Section Portfolio */
+
+#portfolio {
+  padding: 3.125rem 0;
+  text-align: center;
+  color: #393939;
+  background-color: #ffdd99;
+}
+
+#portfolio .titleHead::after {
+  background-color: #e5c37f;
+}
+
+#portfolio .titleText {
+  width: 45%;
+}
+
+.portfolio-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  all: unset;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.portfolio-list-item {
+  padding: 0.5rem 0.625rem;
+  margin: 0 0.625rem;
+  border-radius: 0.313rem;
+  color: #393939;
+  font-size: 1.125rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #ebc985;
+}
+
+.portfolio-active {
+  background-color: #fff;
+}
+
+.portfolio-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.25rem 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.25rem;
+  margin: 3.125rem 1.25rem 0;
+  text-transform: uppercase;
+}
+
+.portfolio-box-item img {
+  width: 100%;
+}
+
+#portfolio .btn {
+  background-color: #17c2a4;
+  border-bottom-color: #14a58c;
+  margin-top: 4.75rem;
+}
+
+/* ------------------Section About us */
+
+#about {
+  background-color: #d74680;
+  padding: 3.125rem 0;
+  text-align: center;
+  color: #fff;
+}
+
+#about .titleHead::after {
+  background-color: #b73c6d;
+}
+
+.about-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.875rem 0;
+  margin: 0 1.25rem;
+}
+
+.about-box-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+  grid-template-columns: 30% 70%;
+  text-align: left;
+}
+
+.img-box {
+  all: unset;
+  width: 70%;
+  text-align: center;
+}
+
+.img-box {
+  all: unset;
+  text-align: center;
+  margin: 1.375rem 0 0;
+}
+
+.about-box-item img {
+  width: 6.25rem;
+  border-radius: 50%;
+}
+
+.about-box-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.about-box-body p {
+  font-size: 1.313rem;
+  font-style: italic;
+  color: #f7dae6;
+  width: 92%;
+}
+
+.about-box-body h3 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.about-box-body span {
+  color: #ffdd99;
+}
+
+/* ---------------------Section Email */
+
+#email {
+  text-align: center;
+  padding: 3.125rem 0;
+  color: #fff;
+  background-color: #3c5499;
+}
+
+#email .titleHead {
+  font-weight: 300;
+  font-family: MyriadPro, sans-serif;
+  letter-spacing: 0.313rem;
+}
+
+#email .titleHead::after {
+  background-color: #273a71;
+}
+
+#email .titleText {
+  width: 100%;
+}
+
+#email input {
+  width: 36%;
+}
+
+#email textarea {
+  width: 79%;
+  height: 6.25rem;
+}
+
+#name-input {
+  position: relative;
+  left: -1rem;
+}
+
+#email-input {
+  position: relative;
+  right: -1rem;
+}
+
+input,
+textarea {
+  color: #fff;
+  font-family: TitilliumWeb;
+  font-size: 1.125rem;
+  background-color: #273a71;
+  padding: 1.125rem;
+  margin: 26px 0 0;
+  border-radius: 0.313rem;
+  border: 0;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+#email .btn {
+  background-color: #30bae7;
+  border-bottom-color: #299ec5;
+  margin-top: 2.5rem;
+}
+
+/* -----------------------------Footer */
+footer {
+  background-color: #344b8e;
+}
+
+.footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 1.25rem 0.625rem;
+}
+
+.footer-box-item a {
+  padding: 0.313rem 1.25rem;
+  margin: 0.313rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+.footer-box-item a:hover {
+  color: #319ccf;
+}
+
+/*  ---------------------Media Query (956) */
+
+@media only screen and (max-width: 956px) {
+  #header h1 {
+    white-space: normal;
+  }
+
+  .boxes {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1rem;
+  }
+
+  .skill-box {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-box {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  #email textarea {
+    width: 80%;
+  }
+}
+
+ /* -----------------media Query (768)*/
+
+@media only screen and (max-width: 768px) {
+  #header {
+    padding: 3.125rem 0;
+  }
+  #icon {
+    display: block;
+    right: 0.813rem;
+    position: fixed;
+    top: 0.875rem;
+    cursor: pointer;
+  }
+
+  .icon-item {
+    width: 1.563rem;
+    height: 0.25rem;
+    background-color: #fff;
+    margin: 0.188rem 0;
+  }
+
+  #header .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0 0.313rem;
+    height: 3.125rem;
+  }
+
+  #navList {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    top: 2.125rem;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding-left: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .list-item {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.75rem;
+    display: block;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  #header h1 {
+    font-size: 1.5rem;
+    padding-left: 0.313rem;
+    padding-right: 0.313rem;
+  }
+
+  .boxes {
+    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+  }
+
+  .box-item {
+    width: 80%;
+  }
+
+  .btn {
+    padding: 0.625rem 1.875rem;
+    font-size: 1rem;
+  }
+
+  .titleHead {
+    font-size: 1.6rem;
+  }
+
+  .titleText {
+    width: 92%;
+  }
+
+  #team img {
+    width: 80%;
+    margin: 1.25rem 0 0;
+  }
+
+  .c100.big {
+    font-size: 10rem;
+  }
+
+  #portfolio .titleText {
+    width: 95%;
+  }
+
+  .portfolio-list-item {
+    margin: 0 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .skill-box {
+    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+  }
+
+  .portfolio-box {
+    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+  }
+
+  .portfolio-box-item img {
+    width: 90%;
+  }
+
+  .about-box-item {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-box-body {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  #name-input {
+    left: 0;
+  }
+
+  #email-input {
+    right: 0;
+  }
+
+  #email input {
+    width: 80%;
+  }
+
+  #email textarea {
+    width: 80%;
+  }
+}
